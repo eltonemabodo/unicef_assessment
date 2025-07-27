@@ -48,5 +48,4 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-# Raw Data for privacy
-data/raw_data/
+
