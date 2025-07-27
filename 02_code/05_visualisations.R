@@ -1,4 +1,7 @@
-### Visualising the coverage
+###############################################
+# UNICEF Education Assessment – Report Visualizations
+# Script 05: Visualizations
+###############################################
 
 ## Lets plot the indicator coverage by U5MR status
 

@@ -1,7 +1,8 @@
 
-##################################################
-## Data Loading and Cleaning
-##################################################
+###############################################
+# UNICEF Education Assessment – Data Cleaning and preparation
+# Script 02: Data Cleaning and preparation
+###############################################
 
 # 01. Loading the ontrack countries data
 
@@ -128,7 +129,6 @@ complete_merged_data <- indicators_on_track %>%
     SBA = "Skilled Birth Attendance",
     births_thousands = "2022 Projected Births (Thousands)"
   )
-
 
 ## 6. Save the cleaned data to processed_data directory
 

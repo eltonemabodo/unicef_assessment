@@ -1,4 +1,7 @@
-### Weighted Indicators
+###############################################
+# UNICEF Education Assessment – Indicator Coverage Calculation
+# Script 04: Indicator Coverage Calculation
+###############################################
 
 
 required_indicators <- complete_merged_data %>% 
