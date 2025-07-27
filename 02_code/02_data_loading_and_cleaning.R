@@ -2,7 +2,7 @@
 
 ###############################################
 # UNICEF Education Assessment – Data Cleaning and preparation
-# Script 02: Data Cleaning and preparation
+# Script 02: Data Cleaning and preparation 
 ###############################################
 
 # 01. Loading the ontrack countries data
