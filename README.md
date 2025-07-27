@@ -12,8 +12,8 @@ This repository contains my submission for the technical assessment for the UNIC
 ## ⚙️ How to Run
 
 1. Clone the repository
-2. Open `02_code/01_user_profile.R` and run the file to set the user profile
-3. Open `02_code/07_run_project.R` to execute the full workflow
+2. Open `user_profile.R` and run the file to set the user profile
+3. Open `run_project.R` to execute the full workflow
 4. The final report will be saved to `04_report/unicef_assessment_report.docx`
 
 ## 📊 Indicators Calculated
