@@ -5,16 +5,29 @@
 
 # Load required packages
 required_packages <- c(
-  "tidyverse", "readxl", "janitor", "lubridate",
-  "here", "rmarkdown", "gt", "glue", "haven",
-  "writexl", "scales", "survey", "srvyr", "labelled",
-  "showtext", "sysfonts", "showtext", "webshot2"
+  "tidyverse",
+  "readxl",
+  "janitor",
+  "lubridate",
+  "here",
+  "rmarkdown",
+  "gt",
+  "glue",
+  "haven",
+  "writexl",
+  "scales",
+  "labelled",
+  "showtext",
+  "sysfonts",
+  "showtext",
+  "webshot2"
 )
 
 # Install any missing packages
 installed <- installed.packages()[, "Package"]
 for (pkg in required_packages) {
-  if (!(pkg %in% installed)) install.packages(pkg)
+  if (!(pkg %in% installed))
+    install.packages(pkg)
 }
 # Load all
 lapply(required_packages, library, character.only = TRUE)
@@ -22,7 +35,7 @@ lapply(required_packages, library, character.only = TRUE)
 # Set global options
 options(scipen = 999)  # Avoid scientific notation
 options(dplyr.summarise.inform = FALSE)  # Clean summarise output
-showtext_auto() # Automatically use showtext for text rendering
+
 
 # Set relative paths using `here`
 raw_data_dir      <- here::here("01_data/raw_data")
@@ -38,6 +51,7 @@ font_add_google("Open Sans", "opensans_semibold", regular.wt = 600)  # Semi-Bold
 font_add_google("Open Sans", "opensans_bold", regular.wt = 700)      # Bold
 font_add_google("Open Sans", "opensans_extrabold", regular.wt = 800) # Extra-Bold
 showtext_opts(dpi = 300)
+showtext_auto() # Automatically use showtext for text rendering
 
 # Timestamp for logging
 run_time <- Sys.time()

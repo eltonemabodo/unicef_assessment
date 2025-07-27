@@ -23,4 +23,8 @@ rmarkdown::render(
   clean = TRUE
 )
 
-cat("Workflow completed. Report saved to:", file.path(report_dir, "unicef_assessment_report.docx"), "\n")
+cat(
+  "Workflow completed. Report saved to:",
+  file.path(report_dir, "unicef_assessment_report.docx"),
+  "\n"
+)
