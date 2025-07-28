@@ -1,8 +1,9 @@
 
 
+
 ###############################################
 # UNICEF Education Assessment – Data Cleaning and preparation
-# Script 02: Data Cleaning and preparation 
+# Script 02: Data Cleaning and preparation
 ###############################################
 
 # 01. Loading the ontrack countries data
@@ -14,6 +15,7 @@ on_track_countries <- read_xlsx("01_data/raw_data/On-track and off-track countri
   mutate(
     iso3code = as_factor(iso3code),
     official_name = as_factor(official_name),
+    # Re-code the status variable to reflect the status of the under five mortality rate
     status_u5mr = case_when(
       status_u5mr == "On track" | status_u5mr == "Achieved" ~ "On Track",
       status_u5mr == "Acceleration Needed" ~ "Off Track",

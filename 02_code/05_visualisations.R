@@ -3,7 +3,7 @@
 # Script 05: Visualizations
 ###############################################
 
-## Lets plot the indicator coverage by U5MR status
+## Plotting the indicator coverage by U5MR status
 
 indicators_graph <- required_indicators %>%
   pivot_longer(
@@ -27,7 +27,7 @@ indicators_graph <- required_indicators %>%
     color = "black",
     size = 1
   ) +
-  facet_wrap( ~ status_u5mr) +
+  facet_wrap(~ status_u5mr) +
   labs(
     title = "Weighted Coverage of Maternal Health Indicators.",
     subtitle = "Population-weighted coverage estimates of Antenatal Care Visits (ANC4+) and Skilled Birth Attendance (SBA), disaggregated \nby Under-Five Mortality Rate Status",
