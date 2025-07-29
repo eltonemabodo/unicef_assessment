@@ -25,6 +25,16 @@ This repository contains my submission for the technical assessment for the UNIC
 3.  Open `run_project.R` from the root directory and execute the full workflow
 4.  The final report will be saved to `04_report/unicef_assessment_report.docx`
 
+#### Known Warnings
+
+When executing the pipeline (particularly during data cleaning), you may see warnings such as:
+
+> "Expecting logical in F1902 / R1902C6: got 'BDI'"
+
+These warnings are due to type mismatches in a few rows of the input Excel file (e.g., character values like country codes in columns guessed as logical).  
+They do not affect the final outputs or calculations. The pipeline coerces types appropriately downstream, and all indicators and weighted calculations are verified.
+
+
 ## 📊 Indicators Calculated
 
 -   **ANC4 coverage**: % of women with ≥ 4 antenatal visits
