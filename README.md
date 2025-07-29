@@ -16,7 +16,7 @@ This repository contains my submission for the technical assessment for the UNIC
     -   `03_anc4_sba_comparison.png`: Comparison of ANC4 and SBA coverage
 -   `04_report/`: Final report
     -   `unicef_assessment_report.docx`: Final report generated from the RMarkdown file
-    -   `reference_doc.docx`: Reference document for figures formatting
+    -   `reference_doc.docx`: Reference document for figures formatting (please do not delete this document, otherwise it the actual report won't be generated). If deleted, make sure to delete the `reference_docx: ../04_report/reference_doc.docx` in the `06_export_report.Rmd` file
 
 ## ⚙️ How to Run
 
